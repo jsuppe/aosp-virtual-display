@@ -17,6 +17,8 @@ with a forwarding README and updates its top-level references. Existing camera
 release tags and history remain unchanged and still contain their original copy.
 
 Verification: compare each migrated file's SHA-256 with the source checkout,
-check documentation links and whitespace in the migration commit, and verify the
-new GitHub default branch and commit. No compile/device test is claimed: the
+check new documentation links/whitespace, and verify the new GitHub default
+branch and commit. The archived design retains its original trailing whitespace
+so its content remains byte-for-byte identical; a whole-commit whitespace check
+flags those historical lines, not new implementation changes. No compile/device test is claimed: the
 scaffold references missing source/init/manifest files and is not build-ready.
